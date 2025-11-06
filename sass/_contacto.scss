@@ -1,0 +1,204 @@
+.bodycontac{background-color: rgb(8, 209, 98);}
+.formap {padding-top: 15vh;
+    display: flex;
+    flex-wrap: nowrap;
+    .formulario {
+    background-color: rgb(8, 209, 98);
+    width: 50vw;
+    height: 90vh;
+
+    padding: 3rem;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(17, auto);
+    grid-template-areas:
+        ". . consul . . . ."
+        ". . . . . . . "
+        ". nom nom . . . ."
+        ". innom innom innom . . ."
+        ". ape ape . . . ."
+        ". inape inape inape . . ."
+        ". pass pass . . . ."
+        ". inpass inpass inpass . . ."
+        ". mens mens . . . ."
+        ". inmens inmens inmens . . ."
+        ". gen gen . . . ."
+        ". ingenh hom . . . ."
+        ". ingenm muj . . . ."
+        ". ingenp pre pre pre . ."
+        ". susc insusc . . . ."
+        ". . . . . . ."
+        ". . . env . . ."
+}
+
+.consul {
+    grid-area: consul;
+}
+
+.nom {
+    grid-area: nom;
+    align-content: end;
+
+}
+
+
+.innom {
+    grid-area: innom;
+    transform: scale(0.9);
+
+}
+
+.innom:focus {
+    background-color: rgb(141, 247, 229);
+}
+
+.innom:hover {
+    border: 3px solid blue;
+}
+
+.ape {
+    grid-area: ape;
+    align-content: end;
+}
+
+.inape {
+    grid-area: inape;
+    transform: scale(0.9);
+}
+
+.inape:focus {
+    background-color: rgb(141, 247, 229);
+}
+
+.inape:hover {
+    border: 3px solid blue;
+}
+
+.pass {
+    grid-area: pass;
+    align-content: end;
+}
+
+.inpass {
+    grid-area: inpass;
+    transform: scale(0.9);
+}
+
+.inpass:focus {
+    background-color: rgb(141, 247, 229);
+}
+
+.inpass:hover {
+    border: 3px solid blue;
+}
+
+
+.mens {
+    grid-area: mens;
+    align-content: end;
+}
+
+.inmens {
+    grid-area: inmens;
+    transform: scale(0.9);
+}
+
+.inmens:focus {
+    background-color: rgb(141, 247, 229);
+}
+
+.inmens:hover {
+    border: 3px solid blue;
+}
+
+.gen {
+    grid-area: gen;
+    align-content: end;
+}
+
+.ingenh {
+    grid-area: ingenh;
+    transform: scale(0.6);
+}
+
+.hom {
+    grid-area: hom;
+    align-content: center;
+}
+
+.ingenm {
+    grid-area: ingenm;
+    transform: scale(0.6);
+}
+
+.muj {
+    grid-area: muj;
+    align-content: center;
+}
+
+.ingenp {
+    grid-area: ingenp;
+    transform: scale(0.6);
+}
+
+.pre {
+    grid-area: pre;
+    align-content: center;
+}
+
+.susc {
+    grid-area: susc;
+}
+
+.insusc {
+    grid-area: insusc;
+    transform: scale(0.6);
+
+}
+
+.env {
+    grid-area: env;
+    transform: scale(0.9);
+    justify-self: center;
+    align-self: center;
+}
+.cajamapa {
+    background-color: rgb(8, 209, 98);
+    width: 50vw;
+    height: 90vh;
+    justify-items: center;
+    align-content: center;
+}
+}
+
+.contcarru {
+    width: 100%;
+    min-height: 180dvh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column; 
+  align-items: center;   
+  justify-content: center;
+  gap: 5rem;
+  padding-block: 3rem;
+  h5{font-size: 3rem;
+    margin: 0;
+    }
+
+
+
+.carousel {
+    width: 25vw;
+    height: 40vh;
+}
+
+.produc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+}

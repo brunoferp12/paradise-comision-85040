@@ -1,0 +1,268 @@
+.maintienda {padding-top: 15vh;
+    background-color: aqua;
+    width: 100%;
+    gap: 3 rem;
+    padding: 3 rem;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(9, auto);
+    grid-template-areas:
+        ". . . . . . tiend . . . . . ."
+        ". repons1 repons1 repons1 . repons2 repons2 repons2 . repons3 repons3 repons3 ."
+        ". descrip1 descrip1 descrip1 . descrip2 descrip2 descrip2 . descrip3 descrip3 descrip3 ."
+        ". repons4 repons4 repons4 . repons5 repons5 repons5 . repons6 repons6 repons6 ."
+        ". descrip4 descrip4 descrip4 . descrip5 descrip5 descrip5 . descrip6 descrip6 descrip6 ."
+        ". repons7 repons7 repons7 . repons8 repons8 repons8 . repons9 repons9 repons9 ."
+        ". descrip7 descrip7 descrip7 . descrip8 descrip8 descrip8 . descrip9 descrip9 descrip9 ."
+        ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ."
+        ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
+    ;
+    .tiend {
+    grid-area: tiend;
+}
+
+.repons1 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons1;
+}
+
+.descrip1 {
+    grid-area: descrip1;
+}
+
+.repons2 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons2;
+}
+
+.descrip2 {
+    grid-area: descrip2;
+}
+
+.repons3 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons3;
+}
+
+.descrip3 {
+    grid-area: descrip3;
+}
+
+.repons4 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons4;
+}
+
+.descrip4 {
+    grid-area: descrip4;
+}
+
+.repons5 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons5;
+}
+
+.descrip5 {
+    grid-area: descrip5;
+}
+
+.repons6 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons6;
+}
+
+.descrip6 {
+    grid-area: descrip6;
+}
+
+.repons7 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons7;
+}
+
+.descrip7 {
+    grid-area: descrip7;
+}
+
+.repons8 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons8;
+}
+
+.descrip8 {
+    grid-area: descrip8;
+}
+
+.repons9 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons9;
+}
+
+.descrip9 {
+    grid-area: descrip9;
+}
+
+.repons10 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons10;
+}
+
+.descrip10 {
+    grid-area: descrip10;
+}
+
+.repons11 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons11;
+}
+
+.descrip11 {
+    grid-area: descrip11;
+}
+
+.repons12 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons12;
+}
+
+.descrip12 {
+    grid-area: descrip12;
+}
+}
+
+.tiend {
+    grid-area: tiend;
+}
+
+.repons1 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons1;
+}
+
+.descrip1 {
+    grid-area: descrip1;
+}
+
+.repons2 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons2;
+}
+
+.descrip2 {
+    grid-area: descrip2;
+}
+
+.repons3 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons3;
+}
+
+.descrip3 {
+    grid-area: descrip3;
+}
+
+.repons4 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons4;
+}
+
+.descrip4 {
+    grid-area: descrip4;
+}
+
+.repons5 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons5;
+}
+
+.descrip5 {
+    grid-area: descrip5;
+}
+
+.repons6 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons6;
+}
+
+.descrip6 {
+    grid-area: descrip6;
+}
+
+.repons7 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons7;
+}
+
+.descrip7 {
+    grid-area: descrip7;
+}
+
+.repons8 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons8;
+}
+
+.descrip8 {
+    grid-area: descrip8;
+}
+
+.repons9 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons9;
+}
+
+.descrip9 {
+    grid-area: descrip9;
+}
+
+.repons10 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons10;
+}
+
+.descrip10 {
+    grid-area: descrip10;
+}
+
+.repons11 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons11;
+}
+
+.descrip11 {
+    grid-area: descrip11;
+}
+
+.repons12 {
+    width: 20vw;
+    height: 50vh;
+    grid-area: repons12;
+}
+
+.descrip12 {
+    grid-area: descrip12;
+}

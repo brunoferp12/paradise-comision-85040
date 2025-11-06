@@ -1,0 +1,66 @@
+@use "variables" as v;
+
+
+.nosot {background-color: v.$background;
+    padding-top: 15vh;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+
+        "quienessomos desde"
+        "quienessomos ."
+        "quienessomos loc"
+        "quienessomos loc";
+
+    align-items: star;
+    gap: 1rem;
+    
+}
+
+.quienessomos {
+    grid-area: quienessomos;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 2rem;
+    border-radius: 20px;
+
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.quienessomos h2 {
+    text-align: center;
+    color: #1e5a85;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.quienessomos p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.loc {
+    grid-area: loc;
+    align-content: start;
+    align-items: start;
+    width: 45vw;
+    height: 60vh;
+    border: 5px solid rgb(47, 0, 255);
+}
+
+.desde {
+    grid-area: desde;
+    align-content: center;
+    font-family: 'Playfair Display', serif;
+    /* elegante y clásica */
+    font-size: 6rem;
+    color: #14119c;
+    /* azul profundo */
+    text-align: center;
+}
+    

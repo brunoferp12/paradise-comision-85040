@@ -6,10 +6,7 @@
 
 /*Contenedor-de-header*/
 
-.logo {
-    height: 12vh;
-    width: auto;
-}
+
 
 body {
     background-color: aqua;
@@ -33,6 +30,10 @@ header {position: fixed;
     justify-items: center;
 }
 
+.logo {
+    height: 12vh;
+    width: auto;
+}
 .logo {
     grid-area: logo;
 }
