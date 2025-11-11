@@ -50,6 +50,10 @@ header{background-color: v.$background;
 
 .nav-list {
     list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .stilnav {
@@ -61,4 +65,59 @@ header{background-color: v.$background;
 
 
 }
+
+.butcerr{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.but{
+    grid-area: but;
+    display: none;
+}
+.butcerr{
+    grid-area: butcerr;
+display: none;}
+
+ @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "logo name but";
+
+    .enla {
+      /* El nav pasa a ser un panel que se despliega */
+      position: fixed;
+      inset: 15vh 0 0 0; // desde abajo del header
+      background-color: v.$background;
+      display: none; // OCULTO POR DEFECTO
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 1.5rem;
+      gap: 1rem;
+
+      .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      /* Clase que activa el menú (la agrega tu JS) */
+      &.visible {
+        display: flex;
+      }
+    }
+
+    .but {
+      display: block; // AHORA SÍ SE VE EL HAMBURGUESA
+    }
+
+    .butcerr {
+      display: block; // BOTÓN PARA CERRAR, DENTRO DEL PANEL
+      align-self: flex-end;
+      margin: 0 1.5rem 1rem 0;
+    }
+  }
 }
