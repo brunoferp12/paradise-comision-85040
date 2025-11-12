@@ -130,5 +130,16 @@
 
     
     <script src="../main.js" defer></script>
+    <script>
+  const header = document.querySelector('header');
+  const btn = document.querySelector('.but');   // tu botón hamburguesa
+  const nav = document.querySelector('.enla');  // contenedor de enlaces
+
+  if (header && btn && nav) {
+    btn.addEventListener('click', () => {
+      header.classList.toggle('open'); // activa el CSS: header.open .enla { display:flex; }
+    });
+  }
+</script>
 </body>
 </html>

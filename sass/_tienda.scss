@@ -1,4 +1,10 @@
-.maintienda {padding-top: 15vh;
+@use "variables" as v;
+
+@mixin card-bookrp {
+    width: 60vw;
+        height: 50vh;}
+.maintienda{
+    padding-top: 15vh;
     background-color: aqua;
     width: 100%;
     gap: 3 rem;
@@ -18,23 +24,18 @@
         ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ."
         ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
     ;
-    .tiend {
-    grid-area: tiend;
-}
+    .tiend {grid-area: tiend;}
+    .repons1 {
+        @extend %card-book;
+        grid-area: repons1;
 
-.repons1 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons1;
 }
-
-.descrip1 {
+.descrip1{
     grid-area: descrip1;
 }
 
 .repons2 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons2;
 }
 
@@ -43,8 +44,7 @@
 }
 
 .repons3 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons3;
 }
 
@@ -53,8 +53,7 @@
 }
 
 .repons4 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons4;
 }
 
@@ -63,8 +62,7 @@
 }
 
 .repons5 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons5;
 }
 
@@ -73,8 +71,7 @@
 }
 
 .repons6 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons6;
 }
 
@@ -83,8 +80,7 @@
 }
 
 .repons7 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons7;
 }
 
@@ -93,8 +89,7 @@
 }
 
 .repons8 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons8;
 }
 
@@ -103,8 +98,7 @@
 }
 
 .repons9 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons9;
 }
 
@@ -113,8 +107,7 @@
 }
 
 .repons10 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons10;
 }
 
@@ -123,8 +116,7 @@
 }
 
 .repons11 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons11;
 }
 
@@ -133,8 +125,7 @@
 }
 
 .repons12 {
-    width: 20vw;
-    height: 50vh;
+    @extend %card-book;
     grid-area: repons12;
 }
 
@@ -143,126 +134,167 @@
 }
 }
 
-.tiend {
-    grid-area: tiend;
+@media screen and (min-width: 320px) and (max-width: 430px) {
+    .maintienda {
+        
+        background-color: aqua;
+        width: 100%;
+        gap: 3rem;
+        padding: 3rem;
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(36, auto);
+        grid-template-areas:
+            "tiend"
+            "repons1"
+            "descrip1"
+            "."
+            "repons2"
+            "descrip2"
+            "."
+            "repons3"
+            "descrip3"
+            "."
+            "repons4"
+            "descrip4"
+            "."
+            "repons5"
+            "descrip5"
+            "."
+            "repons6"
+            "descrip6"
+            "."
+            "repons7"
+            "descrip7"
+            "."
+            "repons8"
+            "descrip8"
+            "."
+            "repons9"
+            "descrip9"
+            "."
+            "repons10"
+            "descrip10"
+            "."
+            "repons11"
+            "descrip11"
+            "."
+            "repons12"
+            "descrip12";
+        justify-items: center;
+        .tiend {
+        grid-area: tiend;
+    }
+
+    .repons1 {
+    @include card-bookrp;
+        grid-area: repons1;
+    }
+
+    .descrip1 {
+        grid-area: descrip1;
+
+    }
+
+    .repons2 {
+        @include card-bookrp;
+        grid-area: repons2;
+    }
+
+    .descrip2 {
+        grid-area: descrip2;
+    }
+
+    .repons3 {
+        @include card-bookrp;
+        grid-area: repons3;
+    }
+
+    .descrip3 {
+        grid-area: descrip3;
+    }
+
+    .repons4 {
+        @include card-bookrp;
+        grid-area: repons4;
+    }
+
+    .descrip4 {
+        grid-area: descrip4;
+    }
+
+    .repons5 {
+        @include card-bookrp;
+        grid-area: repons5;
+    }
+
+    .descrip5 {
+        grid-area: descrip5;
+    }
+
+    .repons6 {
+        @include card-bookrp;
+        grid-area: repons6;
+    }
+
+    .descrip6 {
+        grid-area: descrip6;
+    }
+
+    .repons7 {
+        @include card-bookrp;
+        grid-area: repons7;
+    }
+
+    .descrip7 {
+        grid-area: descrip7;
+    }
+
+    .repons8 {
+        @include card-bookrp;
+        grid-area: repons8;
+    }
+
+    .descrip8 {
+        grid-area: descrip8;
+    }
+
+    .repons9 {
+        @include card-bookrp;
+        grid-area: repons9;
+    }
+
+    .descrip9 {
+        grid-area: descrip9;
+    }
+
+    .repons10 {
+        @include card-bookrp;
+        grid-area: repons10;
+    }
+
+    .descrip10 {
+        grid-area: descrip10;
+    }
+
+    .repons11 {
+        @include card-bookrp;
+        grid-area: repons11;
+    }
+
+    .descrip11 {
+        grid-area: descrip11;
+    }
+
+    .repons12 {
+       @include card-bookrp;
+        grid-area: repons12;
+    }
+
+    .descrip12 {
+        grid-area: descrip12;
+    }
 }
 
-.repons1 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons1;
-}
-
-.descrip1 {
-    grid-area: descrip1;
-}
-
-.repons2 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons2;
-}
-
-.descrip2 {
-    grid-area: descrip2;
-}
-
-.repons3 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons3;
-}
-
-.descrip3 {
-    grid-area: descrip3;
-}
-
-.repons4 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons4;
-}
-
-.descrip4 {
-    grid-area: descrip4;
-}
-
-.repons5 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons5;
-}
-
-.descrip5 {
-    grid-area: descrip5;
-}
-
-.repons6 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons6;
-}
-
-.descrip6 {
-    grid-area: descrip6;
-}
-
-.repons7 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons7;
-}
-
-.descrip7 {
-    grid-area: descrip7;
-}
-
-.repons8 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons8;
-}
-
-.descrip8 {
-    grid-area: descrip8;
-}
-
-.repons9 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons9;
-}
-
-.descrip9 {
-    grid-area: descrip9;
-}
-
-.repons10 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons10;
-}
-
-.descrip10 {
-    grid-area: descrip10;
-}
-
-.repons11 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons11;
-}
-
-.descrip11 {
-    grid-area: descrip11;
-}
-
-.repons12 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons12;
-}
-
-.descrip12 {
-    grid-area: descrip12;
 }

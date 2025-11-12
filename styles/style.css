@@ -1,1033 +1,278 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Extend*/
+.maintienda .repons1, .maintienda .repons2, .maintienda .repons3, .maintienda .repons4, .maintienda .repons5, .maintienda .repons6, .maintienda .repons7, .maintienda .repons8, .maintienda .repons9, .maintienda .repons10, .maintienda .repons11, .maintienda .repons12 {
+  width: 20vw;
+  height: 50vh;
 }
 
-/*Contenedor-de-header*/
-
-
-
-body {
-    background-color: aqua;
+.maintienda {
+  padding-top: 15vh;
+  background-color: aqua;
+  width: 100%;
+  gap: 3 rem;
+  padding: 3 rem;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(9, auto);
+  grid-template-areas: ". . . . . . tiend . . . . . ." ". repons1 repons1 repons1 . repons2 repons2 repons2 . repons3 repons3 repons3 ." ". descrip1 descrip1 descrip1 . descrip2 descrip2 descrip2 . descrip3 descrip3 descrip3 ." ". repons4 repons4 repons4 . repons5 repons5 repons5 . repons6 repons6 repons6 ." ". descrip4 descrip4 descrip4 . descrip5 descrip5 descrip5 . descrip6 descrip6 descrip6 ." ". repons7 repons7 repons7 . repons8 repons8 repons8 . repons9 repons9 repons9 ." ". descrip7 descrip7 descrip7 . descrip8 descrip8 descrip8 . descrip9 descrip9 descrip9 ." ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ." ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
+}
+.maintienda .tiend {
+  grid-area: tiend;
+}
+.maintienda .repons1 {
+  grid-area: repons1;
+}
+.maintienda .descrip1 {
+  grid-area: descrip1;
+}
+.maintienda .repons2 {
+  grid-area: repons2;
+}
+.maintienda .descrip2 {
+  grid-area: descrip2;
+}
+.maintienda .repons3 {
+  grid-area: repons3;
+}
+.maintienda .descrip3 {
+  grid-area: descrip3;
+}
+.maintienda .repons4 {
+  grid-area: repons4;
+}
+.maintienda .descrip4 {
+  grid-area: descrip4;
+}
+.maintienda .repons5 {
+  grid-area: repons5;
+}
+.maintienda .descrip5 {
+  grid-area: descrip5;
+}
+.maintienda .repons6 {
+  grid-area: repons6;
+}
+.maintienda .descrip6 {
+  grid-area: descrip6;
+}
+.maintienda .repons7 {
+  grid-area: repons7;
+}
+.maintienda .descrip7 {
+  grid-area: descrip7;
+}
+.maintienda .repons8 {
+  grid-area: repons8;
+}
+.maintienda .descrip8 {
+  grid-area: descrip8;
+}
+.maintienda .repons9 {
+  grid-area: repons9;
+}
+.maintienda .descrip9 {
+  grid-area: descrip9;
+}
+.maintienda .repons10 {
+  grid-area: repons10;
+}
+.maintienda .descrip10 {
+  grid-area: descrip10;
+}
+.maintienda .repons11 {
+  grid-area: repons11;
+}
+.maintienda .descrip11 {
+  grid-area: descrip11;
+}
+.maintienda .repons12 {
+  grid-area: repons12;
+}
+.maintienda .descrip12 {
+  grid-area: descrip12;
 }
 
-
-
-header {position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: aqua;
-    width: 100vw;
-    height: 15vh;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "logo name enla enla enla enla enla enla enla but butcerr";
-    align-items: center;
-    justify-items: center;
-}
-
-.logo {
-    height: 12vh;
-    width: auto;
-}
-.logo {
-    grid-area: logo;
-}
-
-.but {
-    grid-area: but;
-    display: none;
-}
-
-.butcerr {
-    grid-area: butcerr;
-    display: none
-}
-
-
-
-
-
-
-
-.name {
-    grid-area: name;
-}
-
-.enla {
-    grid-area: enla;
-
-
-}
-
-.nav-list {
-    list-style-type: none;
-}
-
-.stilnav {
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid rgb(54, 54, 63);
-    border-radius: 8px;
-    color: black;
-
-
-}
-
-/* Fin Contenedor-de-header*/
-
-/* Contenedor de main en Tienda*/
-.maintienda {padding-top: 15vh;
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .maintienda {
     background-color: aqua;
     width: 100%;
-    gap: 3 rem;
-    padding: 3 rem;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(9, auto);
-    grid-template-areas:
-        ". . . . . . tiend . . . . . ."
-        ". repons1 repons1 repons1 . repons2 repons2 repons2 . repons3 repons3 repons3 ."
-        ". descrip1 descrip1 descrip1 . descrip2 descrip2 descrip2 . descrip3 descrip3 descrip3 ."
-        ". repons4 repons4 repons4 . repons5 repons5 repons5 . repons6 repons6 repons6 ."
-        ". descrip4 descrip4 descrip4 . descrip5 descrip5 descrip5 . descrip6 descrip6 descrip6 ."
-        ". repons7 repons7 repons7 . repons8 repons8 repons8 . repons9 repons9 repons9 ."
-        ". descrip7 descrip7 descrip7 . descrip8 descrip8 descrip8 . descrip9 descrip9 descrip9 ."
-        ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ."
-        ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
-    ;
-}
-
-.tiend {
-    grid-area: tiend;
-}
-
-.repons1 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons1;
-}
-
-.descrip1 {
-    grid-area: descrip1;
-}
-
-.repons2 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons2;
-}
-
-.descrip2 {
-    grid-area: descrip2;
-}
-
-.repons3 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons3;
-}
-
-.descrip3 {
-    grid-area: descrip3;
-}
-
-.repons4 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons4;
-}
-
-.descrip4 {
-    grid-area: descrip4;
-}
-
-.repons5 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons5;
-}
-
-.descrip5 {
-    grid-area: descrip5;
-}
-
-.repons6 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons6;
-}
-
-.descrip6 {
-    grid-area: descrip6;
-}
-
-.repons7 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons7;
-}
-
-.descrip7 {
-    grid-area: descrip7;
-}
-
-.repons8 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons8;
-}
-
-.descrip8 {
-    grid-area: descrip8;
-}
-
-.repons9 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons9;
-}
-
-.descrip9 {
-    grid-area: descrip9;
-}
-
-.repons10 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons10;
-}
-
-.descrip10 {
-    grid-area: descrip10;
-}
-
-.repons11 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons11;
-}
-
-.descrip11 {
-    grid-area: descrip11;
-}
-
-.repons12 {
-    width: 20vw;
-    height: 50vh;
-    grid-area: repons12;
-}
-
-.descrip12 {
-    grid-area: descrip12;
-}
-
-/*Fin Contenedor de main en Tienda*/
-
-/*Contenedor de main en Contacto*/
-.bodycontac{background-color: rgb(8, 209, 98);}
-.formap {padding-top: 15vh;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.formulario {
-    background-color: rgb(8, 209, 98);
-    width: 50vw;
-    height: 90vh;
-
+    gap: 3rem;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(17, auto);
-    grid-template-areas:
-        ". . consul . . . ."
-        ". . . . . . . "
-        ". nom nom . . . ."
-        ". innom innom innom . . ."
-        ". ape ape . . . ."
-        ". inape inape inape . . ."
-        ". pass pass . . . ."
-        ". inpass inpass inpass . . ."
-        ". mens mens . . . ."
-        ". inmens inmens inmens . . ."
-        ". gen gen . . . ."
-        ". ingenh hom . . . ."
-        ". ingenm muj . . . ."
-        ". ingenp pre pre pre . ."
-        ". susc insusc . . . ."
-        ". . . . . . ."
-        ". . . env . . ."
-}
-
-.consul {
-    grid-area: consul;
-}
-
-.nom {
-    grid-area: nom;
-    align-content: end;
-
-}
-
-
-.innom {
-    grid-area: innom;
-    transform: scale(0.9);
-
-}
-
-.innom:focus {
-    background-color: rgb(141, 247, 229);
-}
-
-.innom:hover {
-    border: 3px solid blue;
-}
-
-.ape {
-    grid-area: ape;
-    align-content: end;
-}
-
-.inape {
-    grid-area: inape;
-    transform: scale(0.9);
-}
-
-.inape:focus {
-    background-color: rgb(141, 247, 229);
-}
-
-.inape:hover {
-    border: 3px solid blue;
-}
-
-.pass {
-    grid-area: pass;
-    align-content: end;
-}
-
-.inpass {
-    grid-area: inpass;
-    transform: scale(0.9);
-}
-
-.inpass:focus {
-    background-color: rgb(141, 247, 229);
-}
-
-.inpass:hover {
-    border: 3px solid blue;
-}
-
-
-.mens {
-    grid-area: mens;
-    align-content: end;
-}
-
-.inmens {
-    grid-area: inmens;
-    transform: scale(0.9);
-}
-
-.inmens:focus {
-    background-color: rgb(141, 247, 229);
-}
-
-.inmens:hover {
-    border: 3px solid blue;
-}
-
-.gen {
-    grid-area: gen;
-    align-content: end;
-}
-
-.ingenh {
-    grid-area: ingenh;
-    transform: scale(0.6);
-}
-
-.hom {
-    grid-area: hom;
-    align-content: center;
-}
-
-.ingenm {
-    grid-area: ingenm;
-    transform: scale(0.6);
-}
-
-.muj {
-    grid-area: muj;
-    align-content: center;
-}
-
-.ingenp {
-    grid-area: ingenp;
-    transform: scale(0.6);
-}
-
-.pre {
-    grid-area: pre;
-    align-content: center;
-}
-
-.susc {
-    grid-area: susc;
-}
-
-.insusc {
-    grid-area: insusc;
-    transform: scale(0.6);
-
-}
-
-.env {
-    grid-area: env;
-    transform: scale(0.9);
-    justify-self: center;
-    align-self: center;
-}
-
-.cajamapa {
-    background-color: rgb(8, 209, 98);
-    width: 50vw;
-    height: 90vh;
-    justify-items: center;
-    align-content: center;
-}
-
-/*Contenedor de main Nosoros*/
-.nosot {padding-top: 15vh;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas:
-
-        "quienessomos desde"
-        "quienessomos ."
-        "quienessomos loc"
-        "quienessomos loc";
-
-    align-items: star;
-    gap: 1rem;
-    margin: 3rem;
-    margin-left: 1rem;
-}
-
-.quienessomos {
-    grid-area: quienessomos;
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 2rem;
-    border-radius: 20px;
-
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-.quienessomos h2 {
-    text-align: center;
-    color: #1e5a85;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
-.quienessomos p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-}
-
-.loc {
-    grid-area: loc;
-    align-content: start;
-    align-items: start;
-    width: 45vw;
-    height: 60vh;
-    border: 5px solid rgb(47, 0, 255);
-}
-
-.desde {
-    grid-area: desde;
-    align-content: center;
-    font-family: 'Playfair Display', serif;
-    /* elegante y clásica */
-    font-size: 6rem;
-    color: #14119c;
-    /* azul profundo */
-    text-align: center;
-}
-
-/*Fin de Contenedor de main Nosotros*/
-/*Contenedor Galería*/
-.contcarru {
-    width: 100%;
-    min-height: 180dvh;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column; 
-  align-items: center;   
-  justify-content: center;
-  gap: 5rem;
-  padding-block: 3rem;
-}
-
-h5{font-size: 3rem;
-    margin: 0;
-    }
-
-
-
-.carousel {
-    width: 25vw;
-    height: 40vh;
-}
-
-.produc {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 10px;
-}
-/*Fin Galería*/
-
-/*Footer*/
-.colorfonf{margin-top: 10px;
-    background-color: rgb(2, 243, 111);}
-h4{margin-top: 20px;
-
-    font-size: medium;}
-.container{
-
-    
-    background-color: rgb(2, 243, 111);}
-/*Fin de Footer*/
-
-@media screen and (max-width: 620px) {
-    .but {
-        display: block;
-    }
-
-    .enla {
-        display: none;
-        display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: end;
-        background-color: #3caff1;
-        padding: 2rem;
-    }
-
-    .enla {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    #enla.visible {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-
-        .butcerr {
-            display: block;
-        }
-
-    }
-}
-
-
-
-.butcerr {
-    display: none;
-}
-
-.stilnav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: none;
-    margin: 0.3rem;
-}
-
-/*Tienda Reponsive*/
-@media screen and (min-width: 320px) and (max-width: 430px) {
-
-
-    .maintienda {
-        background-color: aqua;
-        width: 100%;
-        gap: 3rem;
-        padding: 3rem;
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(36, auto);
-        grid-template-areas:
-            "tiend"
-            "repons1"
-            "descrip1"
-            "."
-            "repons2"
-            "descrip2"
-            "."
-            "repons3"
-            "descrip3"
-            "."
-            "repons4"
-            "descrip4"
-            "."
-            "repons5"
-            "descrip5"
-            "."
-            "repons6"
-            "descrip6"
-            "."
-            "repons7"
-            "descrip7"
-            "."
-            "repons8"
-            "descrip8"
-            "."
-            "repons9"
-            "descrip9"
-            "."
-            "repons10"
-            "descrip10"
-            "."
-            "repons11"
-            "descrip11"
-            "."
-            "repons12"
-            "descrip12";
-        justify-items: center;
-
-    }
-
-    .tiend {
-        grid-area: tiend;
-    }
-
-    .repons1 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons1;
-    }
-
-    .descrip1 {
-        grid-area: descrip1;
-
-    }
-
-    .repons2 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons2;
-    }
-
-    .descrip2 {
-        grid-area: descrip2;
-    }
-
-    .repons3 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons3;
-    }
-
-    .descrip3 {
-        grid-area: descrip3;
-    }
-
-    .repons4 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons4;
-    }
-
-    .descrip4 {
-        grid-area: descrip4;
-    }
-
-    .repons5 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons5;
-    }
-
-    .descrip5 {
-        grid-area: descrip5;
-    }
-
-    .repons6 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons6;
-    }
-
-    .descrip6 {
-        grid-area: descrip6;
-    }
-
-    .repons7 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons7;
-    }
-
-    .descrip7 {
-        grid-area: descrip7;
-    }
-
-    .repons8 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons8;
-    }
-
-    .descrip8 {
-        grid-area: descrip8;
-    }
-
-    .repons9 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons9;
-    }
-
-    .descrip9 {
-        grid-area: descrip9;
-    }
-
-    .repons10 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons10;
-    }
-
-    .descrip10 {
-        grid-area: descrip10;
-    }
-
-    .repons11 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons11;
-    }
-
-    .descrip11 {
-        grid-area: descrip11;
-    }
-
-    .repons12 {
-        width: 60vw;
-        height: 50vh;
-        grid-area: repons12;
-    }
-
-    .descrip12 {
-        grid-area: descrip12;
-    }
-
-    /*Fin Tienda Reponsive*/
-    /*Contacto Reponsive*/
-    .formap {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .formulario {
-        background-color: rgb(8, 209, 98);
-        width: 100%;
-
-        height: auto;
-
-        padding: 3rem;
-        display: grid;
-        grid-auto-rows: auto;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(17, auto);
-        grid-template-areas:
-            ". consul ."
-            ". . ."
-            "nom nom ."
-            "innom innom innom"
-            "ape ape . "
-            "inape inape inape"
-            "pass pass ."
-            "inpass inpass inpass"
-            "mens mens ."
-            "inmens inmens inmens"
-            "gen gen ."
-            ". ingenh hom"
-            ". ingenm muj"
-            ". ingenp pre"
-            "susc insusc ."
-            ". . ."
-            ". . env"
-    }
-
-    .consul {
-        grid-area: consul;
-    }
-
-    .nom {
-        grid-area: nom;
-        align-content: end;
-
-    }
-
-
-    .innom {
-        grid-area: innom;
-        transform: scale(0.9);
-
-    }
-
-    .innom:focus {
-        background-color: rgb(141, 247, 229);
-    }
-
-    .innom:hover {
-        border: 3px solid blue;
-    }
-
-    .ape {
-        grid-area: ape;
-        align-content: end;
-    }
-
-    .inape {
-        grid-area: inape;
-        transform: scale(0.9);
-    }
-
-    .inape:focus {
-        background-color: rgb(141, 247, 229);
-    }
-
-    .inape:hover {
-        border: 3px solid blue;
-    }
-
-    .pass {
-        grid-area: pass;
-        align-content: end;
-    }
-
-    .inpass {
-        grid-area: inpass;
-        transform: scale(0.9);
-    }
-
-    .inpass:focus {
-        background-color: rgb(141, 247, 229);
-    }
-
-    .inpass:hover {
-        border: 3px solid blue;
-    }
-
-
-    .mens {
-        grid-area: mens;
-        align-content: end;
-    }
-
-    .inmens {
-        grid-area: inmens;
-        transform: scale(0.9);
-    }
-
-    .inmens:focus {
-        background-color: rgb(141, 247, 229);
-    }
-
-    .inmens:hover {
-        border: 3px solid blue;
-    }
-
-    .gen {
-        grid-area: gen;
-        align-content: end;
-    }
-
-    .ingenh {
-        grid-area: ingenh;
-        transform: scale(0.6);
-    }
-
-    .hom {
-        grid-area: hom;
-        align-content: center;
-    }
-
-    .ingenm {
-        grid-area: ingenm;
-        transform: scale(0.6);
-    }
-
-    .muj {
-        grid-area: muj;
-        align-content: center;
-    }
-
-    .ingenp {
-        grid-area: ingenp;
-        transform: scale(0.22);
-    }
-
-    .pre {
-        grid-area: pre;
-        align-content: center;
-    }
-
-    .susc {
-        grid-area: susc;
-    }
-
-    .insusc {
-        grid-area: insusc;
-        transform: scale(0.6);
-
-    }
-
-    .env {
-        grid-area: env;
-        transform: scale(0.9);
-        justify-self: center;
-        align-self: center;
-    }
-
-    .cajamapa {
-        background-color: rgb(8, 209, 98);
-        width: 100%;
-        height: 60vh;
-        justify-items: center;
-        align-content: center;
-
-    }
-
-    .tammap {
-        width: 90vw;
-        height: 30vh;
-    }
-    /*Fin Tienda Reponsive*/
-/*Galería Reponsive*/
-.contcarru {
-    width: 100%;
-    height: 80vh;
-    background-color: aquamarine;
-    align-content: center;
-    justify-items: center;
-}
-
-
-.carousel {
-    width: 80vw;
-    height: 40vh;
-}
-
-.produc {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 900;
-    text-align: center;
-    margin-top: 10px;
-}
-/*Fin Galería Reponsive*/
-/*Nosotros Reponsive*/
-.nosot {
-    width: 100%;
-
-    height: auto;
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:
-
-        "quienessomos"
-        "quienessomos"
-        "quienessomos"
-        "quienessomos"
-        "desde"
-        "loc"
-        "loc";
-
-    align-items: star;
-    gap: 1rem;
-    margin: 1rem;
-    margin-left: 1rem;
-}
-
-.quienessomos {width: 90vw;
-    grid-area: quienessomos;
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 2rem;
-    border-radius: 20px;
-
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-}
-
-.quienessomos h2 {
-    text-align: center;
-    color: #1e5a85;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.quienessomos p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    text-align: justify;
-}
-
-.loc {
-    grid-area: loc;
-    align-content: start;
-    align-items: start;
-    width: 90vw;
-    height: 60vh;
-    border: 5px solid rgb(47, 0, 255);
-}
-
-.desde {
-    grid-area: desde;
+    grid-template-rows: repeat(36, auto);
+    grid-template-areas: "tiend" "repons1" "descrip1" "." "repons2" "descrip2" "." "repons3" "descrip3" "." "repons4" "descrip4" "." "repons5" "descrip5" "." "repons6" "descrip6" "." "repons7" "descrip7" "." "repons8" "descrip8" "." "repons9" "descrip9" "." "repons10" "descrip10" "." "repons11" "descrip11" "." "repons12" "descrip12";
     justify-items: center;
-    font-family: 'Playfair Display', serif;
-    
-    font-size: 3rem;
-    color: #14119c;
-    
-    
+  }
+  .maintienda .tiend {
+    grid-area: tiend;
+  }
+  .maintienda .repons1 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons1;
+  }
+  .maintienda .descrip1 {
+    grid-area: descrip1;
+  }
+  .maintienda .repons2 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons2;
+  }
+  .maintienda .descrip2 {
+    grid-area: descrip2;
+  }
+  .maintienda .repons3 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons3;
+  }
+  .maintienda .descrip3 {
+    grid-area: descrip3;
+  }
+  .maintienda .repons4 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons4;
+  }
+  .maintienda .descrip4 {
+    grid-area: descrip4;
+  }
+  .maintienda .repons5 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons5;
+  }
+  .maintienda .descrip5 {
+    grid-area: descrip5;
+  }
+  .maintienda .repons6 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons6;
+  }
+  .maintienda .descrip6 {
+    grid-area: descrip6;
+  }
+  .maintienda .repons7 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons7;
+  }
+  .maintienda .descrip7 {
+    grid-area: descrip7;
+  }
+  .maintienda .repons8 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons8;
+  }
+  .maintienda .descrip8 {
+    grid-area: descrip8;
+  }
+  .maintienda .repons9 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons9;
+  }
+  .maintienda .descrip9 {
+    grid-area: descrip9;
+  }
+  .maintienda .repons10 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons10;
+  }
+  .maintienda .descrip10 {
+    grid-area: descrip10;
+  }
+  .maintienda .repons11 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons11;
+  }
+  .maintienda .descrip11 {
+    grid-area: descrip11;
+  }
+  .maintienda .repons12 {
+    width: 60vw;
+    height: 50vh;
+    grid-area: repons12;
+  }
+  .maintienda .descrip12 {
+    grid-area: descrip12;
+  }
+}
+header {
+  background-color: aqua;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: aqua;
+  width: 100vw;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo name enla enla enla enla enla enla enla but butcerr";
+  align-items: center;
+  justify-items: center;
+}
+header .logo {
+  height: 12vh;
+  width: auto;
+  grid-area: logo;
+}
+header .name {
+  grid-area: name;
+}
+header .but {
+  grid-area: but;
+  display: none;
+}
+header .enla {
+  grid-area: enla;
+}
+header .enla .butcerr {
+  grid-area: butcerr;
+  display: none;
+}
+header .enla .stilnav {
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: solid rgb(54, 54, 63);
+  border-radius: 8px;
+  color: black;
 }
 
-.colorfondo{width: 100%;
-     
-
-    margin-top: 10px;
-    background-color: rgb(2, 243, 111);}
-h4{margin-top: 20px;
-
-
-
-    font-size: medium;}
-.container{
-
-    
-    background-color: rgb(2, 243, 111);}
+@media (max-width: 768px) {
+  header .enla {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 200px;
+    background: #5da6e2;
+    padding: 1rem;
+    z-index: 5000;
+  }
+  header .but {
+    display: block;
+  }
+  header.open .enla {
+    display: flex;
+  }
 }
+footer {
+  margin-top: 10px;
+  background-color: rgb(2, 243, 111);
+}
+footer div div h4 {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
