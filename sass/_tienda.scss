@@ -2,8 +2,10 @@
 
 @mixin card-bookrp {
     width: 60vw;
-        height: 50vh;}
-.maintienda{
+    height: 50vh;
+}
+
+.maintienda {
     padding-top: 15vh;
     background-color: aqua;
     width: 100%;
@@ -24,119 +26,185 @@
         ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ."
         ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
     ;
-    .tiend {grid-area: tiend;}
+
+    .tiend {
+        grid-area: tiend;
+    }
+
     .repons1 {
         @extend %card-book;
         grid-area: repons1;
+        transition: transform .3s ease-in-out;
 
-}
-.descrip1{
-    grid-area: descrip1;
+    }
+
+    .repons1:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip1 {
+        grid-area: descrip1;
+    }
+
+    .repons2 {
+        @extend %card-book;
+        grid-area: repons2;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons2:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip2 {
+        grid-area: descrip2;
+    }
+
+    .repons3 {
+        @extend %card-book;
+        grid-area: repons3;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons3:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip3 {
+        grid-area: descrip3;
+    }
+
+    .repons4 {
+        @extend %card-book;
+        grid-area: repons4;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons4:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip4 {
+        grid-area: descrip4;
+    }
+
+    .repons5 {
+        @extend %card-book;
+        grid-area: repons5;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons5:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip5 {
+        grid-area: descrip5;
+    }
+
+    .repons6 {
+        @extend %card-book;
+        grid-area: repons6;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons6:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip6 {
+        grid-area: descrip6;
+    }
+
+    .repons7 {
+        @extend %card-book;
+        grid-area: repons7;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons7:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip7 {
+        grid-area: descrip7;
+    }
+
+    .repons8 {
+        @extend %card-book;
+        grid-area: repons8;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons8:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip8 {
+        grid-area: descrip8;
+    }
+
+    .repons9 {
+        @extend %card-book;
+        grid-area: repons9;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons9:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip9 {
+        grid-area: descrip9;
+    }
+
+    .repons10 {
+        @extend %card-book;
+        grid-area: repons10;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons10:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip10 {
+        grid-area: descrip10;
+    }
+
+    .repons11 {
+        @extend %card-book;
+        grid-area: repons11;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons11:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip11 {
+        grid-area: descrip11;
+    }
+
+    .repons12 {
+        @extend %card-book;
+        grid-area: repons12;
+        transition: transform .3s ease-in-out;
+    }
+
+    .repons12:hover {
+        transform: scale(1.1);
+    }
+
+    .descrip12 {
+        grid-area: descrip12;
+    }
 }
 
-.repons2 {
-    @extend %card-book;
-    grid-area: repons2;
-}
-
-.descrip2 {
-    grid-area: descrip2;
-}
-
-.repons3 {
-    @extend %card-book;
-    grid-area: repons3;
-}
-
-.descrip3 {
-    grid-area: descrip3;
-}
-
-.repons4 {
-    @extend %card-book;
-    grid-area: repons4;
-}
-
-.descrip4 {
-    grid-area: descrip4;
-}
-
-.repons5 {
-    @extend %card-book;
-    grid-area: repons5;
-}
-
-.descrip5 {
-    grid-area: descrip5;
-}
-
-.repons6 {
-    @extend %card-book;
-    grid-area: repons6;
-}
-
-.descrip6 {
-    grid-area: descrip6;
-}
-
-.repons7 {
-    @extend %card-book;
-    grid-area: repons7;
-}
-
-.descrip7 {
-    grid-area: descrip7;
-}
-
-.repons8 {
-    @extend %card-book;
-    grid-area: repons8;
-}
-
-.descrip8 {
-    grid-area: descrip8;
-}
-
-.repons9 {
-    @extend %card-book;
-    grid-area: repons9;
-}
-
-.descrip9 {
-    grid-area: descrip9;
-}
-
-.repons10 {
-    @extend %card-book;
-    grid-area: repons10;
-}
-
-.descrip10 {
-    grid-area: descrip10;
-}
-
-.repons11 {
-    @extend %card-book;
-    grid-area: repons11;
-}
-
-.descrip11 {
-    grid-area: descrip11;
-}
-
-.repons12 {
-    @extend %card-book;
-    grid-area: repons12;
-}
-
-.descrip12 {
-    grid-area: descrip12;
-}
-}
 
 @media screen and (min-width: 320px) and (max-width: 430px) {
     .maintienda {
-        
+
         background-color: aqua;
         width: 100%;
         gap: 3rem;
@@ -183,118 +251,179 @@
             "repons12"
             "descrip12";
         justify-items: center;
+
         .tiend {
-        grid-area: tiend;
-    }
+            grid-area: tiend;
+        }
 
-    .repons1 {
-    @include card-bookrp;
-        grid-area: repons1;
-    }
+        .repons1 {
+            @include card-bookrp;
+            grid-area: repons1;
+            transition: transform .3s ease-in-out;
+        }
 
-    .descrip1 {
-        grid-area: descrip1;
+        .repons1:hover {
+            transform: scale(1.1);
+        }
 
-    }
+        .descrip1 {
+            grid-area: descrip1;
 
-    .repons2 {
-        @include card-bookrp;
-        grid-area: repons2;
-    }
+        }
 
-    .descrip2 {
-        grid-area: descrip2;
-    }
+        .repons2 {
+            @include card-bookrp;
+            grid-area: repons2;
+            transition: transform .3s ease-in-out;
+        }
 
-    .repons3 {
-        @include card-bookrp;
-        grid-area: repons3;
-    }
+        .repons2:hover {
+            transform: scale(1.1);
+        }
 
-    .descrip3 {
-        grid-area: descrip3;
-    }
+        .descrip2 {
+            grid-area: descrip2;
+        }
 
-    .repons4 {
-        @include card-bookrp;
-        grid-area: repons4;
-    }
+        .repons3 {
+            @include card-bookrp;
+            grid-area: repons3;
+            transition: transform .3s ease-in-out;
+        }
 
-    .descrip4 {
-        grid-area: descrip4;
-    }
+        .repons3:hover {
+            transform: scale(1.1);
+        }
 
-    .repons5 {
-        @include card-bookrp;
-        grid-area: repons5;
-    }
+        .descrip3 {
+            grid-area: descrip3;
+        }
 
-    .descrip5 {
-        grid-area: descrip5;
-    }
+        .repons4 {
+            @include card-bookrp;
+            grid-area: repons4;
+            transition: transform .3s ease-in-out;
+        }
 
-    .repons6 {
-        @include card-bookrp;
-        grid-area: repons6;
-    }
+        .repons4.descrip10 {
+            transform: scale(1.1);
+        }
 
-    .descrip6 {
-        grid-area: descrip6;
-    }
+        .descrip4 {
+            grid-area: descrip4;
+        }
 
-    .repons7 {
-        @include card-bookrp;
-        grid-area: repons7;
-    }
+        .repons5 {
+            @include card-bookrp;
+            grid-area: repons5;
+            transition: transform .3s ease-in-out;
+        }
 
-    .descrip7 {
-        grid-area: descrip7;
-    }
+        .repons5:hover {
+            transform: scale(1.1);
+        }
 
-    .repons8 {
-        @include card-bookrp;
-        grid-area: repons8;
-    }
+        .descrip5 {
+            grid-area: descrip5;
+        }
 
-    .descrip8 {
-        grid-area: descrip8;
-    }
+        .repons6 {
+            @include card-bookrp;
+            grid-area: repons6;
+            transition: transform .3s ease-in-out;
+        }
 
-    .repons9 {
-        @include card-bookrp;
-        grid-area: repons9;
-    }
+        .repons6:hover {
+            transform: scale(1.1);
+        }
 
-    .descrip9 {
-        grid-area: descrip9;
-    }
+        .descrip6 {
+            grid-area: descrip6;
+        }
 
-    .repons10 {
-        @include card-bookrp;
-        grid-area: repons10;
-    }
+        .repons7 {
+            @include card-bookrp;
+            grid-area: repons7;
+            transition: transform .3s ease-in-out;
+        }
 
-    .descrip10 {
-        grid-area: descrip10;
-    }
+        .repons7:hover {
+            transform: scale(1.1);
+        }
 
-    .repons11 {
-        @include card-bookrp;
-        grid-area: repons11;
-    }
+        .descrip7 {
+            grid-area: descrip7;
+        }
 
-    .descrip11 {
-        grid-area: descrip11;
-    }
+        .repons8 {
+            @include card-bookrp;
+            grid-area: repons8;
+            transition: transform .3s ease-in-out;
+        }
 
-    .repons12 {
-       @include card-bookrp;
-        grid-area: repons12;
-    }
+        .repons8:hover {
+            transform: scale(1.1);
+        }
 
-    .descrip12 {
-        grid-area: descrip12;
+        .descrip8 {
+            grid-area: descrip8;
+        }
+
+        .repons9 {
+            @include card-bookrp;
+            grid-area: repons9;
+            transition: transform .3s ease-in-out;
+        }
+
+        .repons9:hover {
+            transform: scale(1.1);
+        }
+
+        .descrip9 {
+            grid-area: descrip9;
+        }
+
+        .repons10 {
+            @include card-bookrp;
+            grid-area: repons10;
+            transition: transform .3s ease-in-out;
+        }
+
+        .repons10.descrip2 {
+            transform: scale(1.1);
+        }
+
+        .descrip10 {
+            grid-area: descrip10;
+        }
+
+        .repons11 {
+            @include card-bookrp;
+            grid-area: repons11;
+            transition: transform .3s ease-in-out;
+        }
+
+        .repons11:hover {
+            transform: scale(1.1);
+        }
+
+        .descrip11 {
+            grid-area: descrip11;
+        }
+
+        .repons12 {
+            @include card-bookrp;
+            grid-area: repons12;
+            transition: transform .3s ease-in-out;
+        }
+
+        .repons12:hover {
+            transform: scale(1.1);
+        }
+
+        .descrip12 {
+            grid-area: descrip12;
+        }
     }
-}
 
 }

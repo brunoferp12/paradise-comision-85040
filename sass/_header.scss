@@ -4,7 +4,7 @@
 
 header {
     background-color: v.$background;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -28,24 +28,27 @@ header {
     .but{ grid-area: but;
     display: none;}
     .enla{grid-area: enla;
+      margin-left: 25rem;
     .butcerr{grid-area: butcerr;
     display: none}
 .stilnav{text-decoration: none;
+  margin-right: 1rem;
+  
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: solid rgb(54, 54, 63);
     border-radius: 8px;
     color: black;}}
     
 }
-@media (max-width: 768px) {
+@media (max-width: 1292px) {
   header {
   
     .enla {
       display: none;
       flex-direction: column;
-      position: absolute;
-      top: 35%;
-      right: 0;
+      position: fixed;
+      top: 5%;
+      right: 13%;
       width: 200px;
       background: #5da6e2;
       padding: 1rem;

@@ -21,72 +21,120 @@
 }
 .maintienda .repons1 {
   grid-area: repons1;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons1:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip1 {
   grid-area: descrip1;
 }
 .maintienda .repons2 {
   grid-area: repons2;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons2:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip2 {
   grid-area: descrip2;
 }
 .maintienda .repons3 {
   grid-area: repons3;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons3:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip3 {
   grid-area: descrip3;
 }
 .maintienda .repons4 {
   grid-area: repons4;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons4:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip4 {
   grid-area: descrip4;
 }
 .maintienda .repons5 {
   grid-area: repons5;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons5:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip5 {
   grid-area: descrip5;
 }
 .maintienda .repons6 {
   grid-area: repons6;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons6:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip6 {
   grid-area: descrip6;
 }
 .maintienda .repons7 {
   grid-area: repons7;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons7:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip7 {
   grid-area: descrip7;
 }
 .maintienda .repons8 {
   grid-area: repons8;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons8:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip8 {
   grid-area: descrip8;
 }
 .maintienda .repons9 {
   grid-area: repons9;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons9:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip9 {
   grid-area: descrip9;
 }
 .maintienda .repons10 {
   grid-area: repons10;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons10:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip10 {
   grid-area: descrip10;
 }
 .maintienda .repons11 {
   grid-area: repons11;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons11:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip11 {
   grid-area: descrip11;
 }
 .maintienda .repons12 {
   grid-area: repons12;
+  transition: transform 0.3s ease-in-out;
+}
+.maintienda .repons12:hover {
+  transform: scale(1.1);
 }
 .maintienda .descrip12 {
   grid-area: descrip12;
@@ -112,6 +160,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons1;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons1:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip1 {
     grid-area: descrip1;
@@ -120,6 +172,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons2;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons2:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip2 {
     grid-area: descrip2;
@@ -128,6 +184,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons3;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons3:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip3 {
     grid-area: descrip3;
@@ -136,6 +196,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons4;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons4.descrip10 {
+    transform: scale(1.1);
   }
   .maintienda .descrip4 {
     grid-area: descrip4;
@@ -144,6 +208,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons5;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons5:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip5 {
     grid-area: descrip5;
@@ -152,6 +220,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons6;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons6:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip6 {
     grid-area: descrip6;
@@ -160,6 +232,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons7;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons7:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip7 {
     grid-area: descrip7;
@@ -168,6 +244,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons8;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons8:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip8 {
     grid-area: descrip8;
@@ -176,6 +256,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons9;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons9:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip9 {
     grid-area: descrip9;
@@ -184,6 +268,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons10;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons10.descrip2 {
+    transform: scale(1.1);
   }
   .maintienda .descrip10 {
     grid-area: descrip10;
@@ -192,6 +280,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons11;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons11:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip11 {
     grid-area: descrip11;
@@ -200,6 +292,10 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons12;
+    transition: transform 0.3s ease-in-out;
+  }
+  .maintienda .repons12:hover {
+    transform: scale(1.1);
   }
   .maintienda .descrip12 {
     grid-area: descrip12;
@@ -208,7 +304,7 @@
 .nosot {
   background-color: aqua;
   padding-top: 15vh;
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -309,7 +405,7 @@
 }
 .promocion {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background: #3abef2;
   background: linear-gradient(0deg, rgb(58, 190, 242) 0%, rgb(2, 243, 111) 0%, rgb(224, 224, 45) 100%);
   display: flex;
@@ -381,9 +477,42 @@
     transform: translateX(0);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .promocion {
+    width: 100%;
+    height: 70vh;
+    background: #3abef2;
+    background: linear-gradient(0deg, rgb(58, 190, 242) 0%, rgb(2, 243, 111) 0%, rgb(224, 224, 45) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .promocion .promo {
+    font-size: 2em;
+    font-family: fantasy;
+    color: rgb(228, 146, 23);
+    animation: left-right 5s ease infinite;
+  }
+  .promocion .promohoy {
+    font-size: 2em;
+    color: coral;
+    font-weight: 800;
+    animation: agrandar 2.5s ease-in-out forwards;
+  }
+  .promocion .promodesc {
+    font-size: 2em;
+    color: red;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    animation: vibrar 0.3s linear infinite;
+  }
+}
 header {
   background-color: aqua;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
@@ -411,6 +540,7 @@ header .but {
 }
 header .enla {
   grid-area: enla;
+  margin-left: 25rem;
 }
 header .enla .butcerr {
   grid-area: butcerr;
@@ -418,19 +548,20 @@ header .enla .butcerr {
 }
 header .enla .stilnav {
   text-decoration: none;
+  margin-right: 1rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: solid rgb(54, 54, 63);
   border-radius: 8px;
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1292px) {
   header .enla {
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 35%;
-    right: 0;
+    position: fixed;
+    top: 5%;
+    right: 13%;
     width: 200px;
     background: #5da6e2;
     padding: 1rem;
@@ -445,12 +576,12 @@ header .enla .stilnav {
 }
 .contcarru {
   width: 100%;
-  min-height: 180dvh;
+  height: 145vh;
   background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: 5rem;
   gap: 5rem;
   padding-block: 3rem;
 }
@@ -472,7 +603,7 @@ header .enla .stilnav {
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .contcarru {
     width: 100%;
-    height: 80vh;
+    height: 120vh;
     background-color: aquamarine;
     display: flex;
     align-content: center;
