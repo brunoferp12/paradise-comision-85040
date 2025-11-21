@@ -68,7 +68,7 @@
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
     .nosot {
         width: 100%;
 
@@ -85,18 +85,19 @@
             "desde"
             "loc"
             "loc";
-display: grid;
+display: flex;
         align-items: star;
         justify-items: center;
+        flex-direction: column;
     gap: 1rem;
     
 
         .quienessomos {
-            width: 90vw;
+            width: 80vw;
             grid-area: quienessomos;
             background-color: #f8f8f8;
             color: #333;
-            padding: 2rem;
+            padding: 1rem;
             border-radius: 20px;
 
 
@@ -106,13 +107,13 @@ display: grid;
             h2 {
                 text-align: center;
                 color: #1e5a85;
-                font-size: 2rem;
+                font-size: 1rem;
                 margin-bottom: 2rem;
 
             }
 
             p {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 margin-bottom: 1rem;
                 text-align: justify;
             }
@@ -121,16 +122,17 @@ display: grid;
     grid-area: loc;
     align-content: start;
     align-items: start;
-    width: 90vw;
+    width: 80vw;
     height: 60vh;
     border: 5px solid rgb(47, 0, 255);
 }
 .desde {
     grid-area: desde;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     font-family: 'Playfair Display', serif;
     
-    font-size: 3rem;
+    font-size: 2rem;
     color: #14119c;
     
     

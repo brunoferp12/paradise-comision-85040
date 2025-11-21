@@ -1,9 +1,10 @@
-/*Extend*/
+/*Extend es para formato pc*/
 .maintienda .repons1, .maintienda .repons2, .maintienda .repons3, .maintienda .repons4, .maintienda .repons5, .maintienda .repons6, .maintienda .repons7, .maintienda .repons8, .maintienda .repons9, .maintienda .repons10, .maintienda .repons11, .maintienda .repons12 {
   width: 20vw;
   height: 50vh;
 }
 
+/*mixin que es para celular*/
 .maintienda {
   padding-top: 15vh;
   background-color: aqua;
@@ -20,6 +21,7 @@
   grid-area: tiend;
 }
 .maintienda .repons1 {
+  margin-top: 2rem;
   grid-area: repons1;
   transition: transform 0.3s ease-in-out;
 }
@@ -27,9 +29,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip1 {
+  margin-top: 1rem;
   grid-area: descrip1;
 }
 .maintienda .repons2 {
+  margin-top: 2rem;
   grid-area: repons2;
   transition: transform 0.3s ease-in-out;
 }
@@ -37,9 +41,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip2 {
+  margin-top: 1rem;
   grid-area: descrip2;
 }
 .maintienda .repons3 {
+  margin-top: 2rem;
   grid-area: repons3;
   transition: transform 0.3s ease-in-out;
 }
@@ -47,9 +53,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip3 {
+  margin-top: 1rem;
   grid-area: descrip3;
 }
 .maintienda .repons4 {
+  margin-top: 2rem;
   grid-area: repons4;
   transition: transform 0.3s ease-in-out;
 }
@@ -57,9 +65,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip4 {
+  margin-top: 1rem;
   grid-area: descrip4;
 }
 .maintienda .repons5 {
+  margin-top: 2rem;
   grid-area: repons5;
   transition: transform 0.3s ease-in-out;
 }
@@ -67,9 +77,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip5 {
+  margin-top: 1rem;
   grid-area: descrip5;
 }
 .maintienda .repons6 {
+  margin-top: 2rem;
   grid-area: repons6;
   transition: transform 0.3s ease-in-out;
 }
@@ -77,9 +89,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip6 {
+  margin-top: 1rem;
   grid-area: descrip6;
 }
 .maintienda .repons7 {
+  margin-top: 2rem;
   grid-area: repons7;
   transition: transform 0.3s ease-in-out;
 }
@@ -87,9 +101,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip7 {
+  margin-top: 1rem;
   grid-area: descrip7;
 }
 .maintienda .repons8 {
+  margin-top: 2rem;
   grid-area: repons8;
   transition: transform 0.3s ease-in-out;
 }
@@ -97,9 +113,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip8 {
+  margin-top: 1rem;
   grid-area: descrip8;
 }
 .maintienda .repons9 {
+  margin-top: 2rem;
   grid-area: repons9;
   transition: transform 0.3s ease-in-out;
 }
@@ -107,9 +125,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip9 {
+  margin-top: 1rem;
   grid-area: descrip9;
 }
 .maintienda .repons10 {
+  margin-top: 2rem;
   grid-area: repons10;
   transition: transform 0.3s ease-in-out;
 }
@@ -117,9 +137,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip10 {
+  margin-top: 1rem;
   grid-area: descrip10;
 }
 .maintienda .repons11 {
+  margin-top: 2rem;
   grid-area: repons11;
   transition: transform 0.3s ease-in-out;
 }
@@ -127,9 +149,11 @@
   transform: scale(1.1);
 }
 .maintienda .descrip11 {
+  margin-top: 1rem;
   grid-area: descrip11;
 }
 .maintienda .repons12 {
+  margin-top: 2rem;
   grid-area: repons12;
   transition: transform 0.3s ease-in-out;
 }
@@ -137,20 +161,21 @@
   transform: scale(1.1);
 }
 .maintienda .descrip12 {
+  margin-top: 1rem;
   grid-area: descrip12;
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .maintienda {
     background-color: aqua;
     width: 100%;
-    gap: 3rem;
+    gap: 2rem;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(36, auto);
-    grid-template-areas: "tiend" "repons1" "descrip1" "." "repons2" "descrip2" "." "repons3" "descrip3" "." "repons4" "descrip4" "." "repons5" "descrip5" "." "repons6" "descrip6" "." "repons7" "descrip7" "." "repons8" "descrip8" "." "repons9" "descrip9" "." "repons10" "descrip10" "." "repons11" "descrip11" "." "repons12" "descrip12";
+    grid-template-rows: repeat(38, auto);
+    grid-template-areas: "." "." "tiend" "repons1" "descrip1" "." "repons2" "descrip2" "." "repons3" "descrip3" "." "repons4" "descrip4" "." "repons5" "descrip5" "." "repons6" "descrip6" "." "repons7" "descrip7" "." "repons8" "descrip8" "." "repons9" "descrip9" "." "repons10" "descrip10" "." "repons11" "descrip11" "." "repons12" "descrip12";
     justify-items: center;
   }
   .maintienda .tiend {
@@ -160,10 +185,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons1;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons1:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip1 {
     grid-area: descrip1;
@@ -172,10 +193,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons2;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons2:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip2 {
     grid-area: descrip2;
@@ -184,10 +201,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons3;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons3:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip3 {
     grid-area: descrip3;
@@ -196,10 +209,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons4;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons4.descrip10 {
-    transform: scale(1.1);
   }
   .maintienda .descrip4 {
     grid-area: descrip4;
@@ -208,10 +217,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons5;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons5:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip5 {
     grid-area: descrip5;
@@ -220,10 +225,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons6;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons6:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip6 {
     grid-area: descrip6;
@@ -232,10 +233,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons7;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons7:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip7 {
     grid-area: descrip7;
@@ -244,10 +241,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons8;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons8:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip8 {
     grid-area: descrip8;
@@ -256,10 +249,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons9;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons9:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip9 {
     grid-area: descrip9;
@@ -268,10 +257,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons10;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons10.descrip2 {
-    transform: scale(1.1);
   }
   .maintienda .descrip10 {
     grid-area: descrip10;
@@ -280,10 +265,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons11;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons11:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip11 {
     grid-area: descrip11;
@@ -292,10 +273,6 @@
     width: 60vw;
     height: 50vh;
     grid-area: repons12;
-    transition: transform 0.3s ease-in-out;
-  }
-  .maintienda .repons12:hover {
-    transform: scale(1.1);
   }
   .maintienda .descrip12 {
     grid-area: descrip12;
@@ -353,7 +330,7 @@
   border: 5px solid rgb(47, 0, 255);
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .nosot {
     width: 100%;
     height: auto;
@@ -361,17 +338,18 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: "quienessomos" "quienessomos" "quienessomos" "quienessomos" "desde" "loc" "loc";
-    display: grid;
+    display: flex;
     align-items: star;
     justify-items: center;
+    flex-direction: column;
     gap: 1rem;
   }
   .nosot .quienessomos {
-    width: 90vw;
+    width: 80vw;
     grid-area: quienessomos;
     background-color: #f8f8f8;
     color: #333;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     line-height: 1.6;
@@ -379,11 +357,11 @@
   .nosot .quienessomos h2 {
     text-align: center;
     color: #1e5a85;
-    font-size: 2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
   .nosot .quienessomos p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     text-align: justify;
   }
@@ -391,15 +369,16 @@
     grid-area: loc;
     align-content: start;
     align-items: start;
-    width: 90vw;
+    width: 80vw;
     height: 60vh;
     border: 5px solid rgb(47, 0, 255);
   }
   .nosot .desde {
     grid-area: desde;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     font-family: "Playfair Display", serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #14119c;
   }
 }
@@ -416,10 +395,11 @@
   margin-top: 1rem;
 }
 .promocion .promo {
+  margin-top: 50px;
   font-size: 5em;
   font-family: fantasy;
   color: rgb(228, 146, 23);
-  animation: left-right 5s ease infinite;
+  animation: left-right-pc 5s ease infinite;
 }
 .promocion .promohoy {
   font-size: 5em;
@@ -435,7 +415,7 @@
   animation: vibrar 0.3s linear infinite;
 }
 
-@keyframes left-right {
+@keyframes left-right-pc {
   0% {
     transform: translateX(0);
   }
@@ -477,7 +457,82 @@
     transform: translateX(0);
   }
 }
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 501px) and (max-width: 864px) {
+  .promocion {
+    width: 100%;
+    height: 100vh;
+    background: #3abef2;
+    background: linear-gradient(0deg, rgb(58, 190, 242) 0%, rgb(2, 243, 111) 0%, rgb(224, 224, 45) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .promocion .promo {
+    font-size: 3em;
+    font-family: fantasy;
+    color: rgb(228, 146, 23);
+    animation: left-right-tablet 5s ease infinite;
+  }
+  .promocion .promohoy {
+    font-size: 2rem;
+    color: coral;
+    font-weight: 800;
+    animation: agrandar-tablet 2.5s ease-in-out forwards;
+  }
+  .promocion .promodesc {
+    font-size: 2em;
+    color: red;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    animation: vibrar-tablet 0.3s linear infinite;
+  }
+  @keyframes left-right-tablet {
+    0% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(20vw);
+    }
+    65% {
+      transform: translateX(-20vw);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes agrandar-tablet {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.8);
+    }
+  }
+  @keyframes vibrar-tablet {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-2px);
+    }
+    40% {
+      transform: translateX(2px);
+    }
+    60% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
   .promocion {
     width: 100%;
     height: 70vh;
@@ -494,20 +549,62 @@
     font-size: 2em;
     font-family: fantasy;
     color: rgb(228, 146, 23);
-    animation: left-right 5s ease infinite;
+    animation: left-right-celu 5s ease infinite;
   }
   .promocion .promohoy {
-    font-size: 2em;
+    font-size: 1.5em;
     color: coral;
     font-weight: 800;
-    animation: agrandar 2.5s ease-in-out forwards;
+    animation: agrandar-celu 2.5s ease-in-out forwards;
   }
   .promocion .promodesc {
     font-size: 2em;
     color: red;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-weight: 500;
-    animation: vibrar 0.3s linear infinite;
+    animation: vibrar-celu 0.3s linear infinite;
+  }
+  @keyframes left-right-celu {
+    0% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(10vw);
+    }
+    65% {
+      transform: translateX(-10vw);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes agrandar-celu {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.5);
+    }
+  }
+  @keyframes vibrar-celu {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-2px);
+    }
+    40% {
+      transform: translateX(2px);
+    }
+    60% {
+      transform: translateX(-2px);
+    }
+    80% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
 header {
@@ -555,7 +652,7 @@ header .enla .stilnav {
   color: black;
 }
 
-@media (max-width: 1292px) {
+@media (max-width: 1320px) {
   header .enla {
     display: none;
     flex-direction: column;
@@ -576,22 +673,22 @@ header .enla .stilnav {
 }
 .contcarru {
   width: 100%;
-  height: 145vh;
+  height: 130vh !important;
   background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
-  gap: 5rem;
+  margin-top: 50px;
+  gap: 2rem;
   padding-block: 3rem;
 }
 .contcarru h5 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 .contcarru .carousel {
-  width: 25vw;
-  height: 40vh;
+  width: 15vw;
+  height: 10vh;
 }
 .contcarru .carousel .produc {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -603,15 +700,15 @@ header .enla .stilnav {
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .contcarru {
     width: 100%;
-    height: 120vh;
+    height: 40vh;
     background-color: aquamarine;
     display: flex;
     align-content: center;
     justify-items: center;
   }
   .contcarru .carousel {
-    width: 80vw;
-    height: 40vh;
+    width: 50vw;
+    height: 30vh;
   }
   .contcarru .carousel .produc {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -636,7 +733,7 @@ footer div div h4 {
 .formap .formulario {
   background-color: rgb(8, 209, 98);
   width: 50vw;
-  height: 90vh;
+  height: 100vh;
   padding: 3rem;
   display: grid;
   grid-auto-rows: auto;
@@ -741,18 +838,24 @@ footer div div h4 {
 .formap .formulario .env {
   grid-area: env;
   transform: scale(0.9);
+  display: flex;
   justify-self: center;
   align-self: center;
 }
 .formap .cajamapa {
   background-color: rgb(8, 209, 98);
   width: 100vw;
-  height: 90vh;
-  justify-items: center;
-  align-content: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formap .cajamapa .tammap {
+  width: 50vw;
+  height: 50vh;
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 320px) and (max-width: 806px) {
   .formap {
     display: flex;
     flex-wrap: wrap;
@@ -760,7 +863,7 @@ footer div div h4 {
   .formap .formulario {
     background-color: rgb(8, 209, 98);
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
@@ -872,12 +975,13 @@ footer div div h4 {
     background-color: rgb(8, 209, 98);
     width: 100%;
     height: 60vh;
+    display: flex;
     justify-items: center;
     align-content: center;
   }
-  .cajamapa div .tammap {
-    width: 90vw;
-    height: 50vh;
+  .cajamapa .tammap {
+    width: 80% !important;
+    height: 50vh !important;
   }
 }
 
