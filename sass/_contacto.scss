@@ -21,13 +21,13 @@
     .formulario {
         background-color: rgb(8, 209, 98);
         width: 50vw;
-        height: 100vh;
+        height: 130vh;
 
         padding: 3rem;
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(17, auto);
+        grid-template-rows: repeat(19, auto);
         grid-template-areas:
             ". . consul . . . ."
             ". . . . . . . "
@@ -38,6 +38,8 @@
             ". pass pass . . . ."
             ". inpass inpass inpass . . ."
             ". mens mens . . . ."
+            ". inmens inmens inmens . . ."
+            ". inmens inmens inmens . . ."
             ". inmens inmens inmens . . ."
             ". gen gen . . . ."
             ". ingenh hom . . . ."
@@ -112,11 +114,13 @@
 
         .mens {
             grid-area: mens;
+
             align-content: end;
         }
 
         .inmens {
             grid-area: inmens;
+            height: 180px;
             transform: scale(0.9);
         }
 
@@ -186,7 +190,7 @@
     .cajamapa {
         background-color: rgb(8, 209, 98);
         width: 100vw;
-        height: 100vh;
+        height: 130vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -201,37 +205,39 @@
 @media screen and (min-width: 320px) and (max-width: 806px) {
     .formap {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
 
         .formulario {
             background-color: rgb(8, 209, 98);
             width: 100%;
 
-            height: 100vh;
+            height: 120vh;
 
             padding: 3rem;
             display: grid;
             grid-auto-rows: auto;
             grid-template-columns: repeat(7, 1fr);
-            grid-template-rows: repeat(17, auto);
+            grid-template-rows: repeat(19, auto);
             grid-template-areas:
-                ". consul ."
-                ". . ."
-                "nom nom ."
-                "innom innom innom"
-                "ape ape . "
-                "inape inape inape"
-                "pass pass ."
-                "inpass inpass inpass"
-                "mens mens ."
-                "inmens inmens inmens"
-                "gen gen ."
-                ". ingenh hom"
-                ". ingenm muj"
-                ". ingenp pre"
-                "susc insusc ."
-                ". . ."
-                ". . env";
+                ". . . consul . . ."
+                ". . . . . . ."
+                " . . nom nom . . ."
+                ". . innom innom innom . ."
+                ". . ape ape . . ."
+                ". . inape inape inape . ."
+                ". . pass pass . . ."
+                ". . inpass inpass inpass . ."
+                ". . mens mens . . ."
+                ". . inmens inmens inmens . ."
+                ". . inmens inmens inmens . ."
+                ". . inmens inmens inmens . ."
+                ". . gen gen . . ."
+                ". . ingenh hom . . ."
+                ". . ingenm muj . . ."
+                ". . ingenp pre pre . ."
+                ". . susc insusc . . ."
+                ". . . . . . ."
+                ". . . . env . .";
 
             .consul {
                 grid-area: consul;
@@ -340,7 +346,7 @@
 
             .ingenp {
                 grid-area: ingenp;
-                transform: scale(0.22);
+                transform: scale(0.6);
             }
 
             .pre {
@@ -371,10 +377,9 @@
     .cajamapa {
         background-color: rgb(8, 209, 98);
         width: 100%;
-        height: 60vh;
-        display: flex;
-        justify-items: center;
-        align-content: center;
+        height: 70vh !important;
+        
+        
 
         .tammap {
             width: 80% !important;

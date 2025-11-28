@@ -853,13 +853,13 @@ footer div div h4 {
 .formap .formulario {
   background-color: rgb(8, 209, 98);
   width: 50vw;
-  height: 100vh;
+  height: 130vh;
   padding: 3rem;
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(17, auto);
-  grid-template-areas: ". . consul . . . ." ". . . . . . . " ". nom nom . . . ." ". innom innom innom . . ." ". ape ape . . . ." ". inape inape inape . . ." ". pass pass . . . ." ". inpass inpass inpass . . ." ". mens mens . . . ." ". inmens inmens inmens . . ." ". gen gen . . . ." ". ingenh hom . . . ." ". ingenm muj . . . ." ". ingenp pre pre pre . ." ". susc insusc . . . ." ". . . . . . ." ". . . env . . .";
+  grid-template-rows: repeat(19, auto);
+  grid-template-areas: ". . consul . . . ." ". . . . . . . " ". nom nom . . . ." ". innom innom innom . . ." ". ape ape . . . ." ". inape inape inape . . ." ". pass pass . . . ." ". inpass inpass inpass . . ." ". mens mens . . . ." ". inmens inmens inmens . . ." ". inmens inmens inmens . . ." ". inmens inmens inmens . . ." ". gen gen . . . ." ". ingenh hom . . . ." ". ingenm muj . . . ." ". ingenp pre pre pre . ." ". susc insusc . . . ." ". . . . . . ." ". . . env . . .";
 }
 .formap .formulario .consul {
   grid-area: consul;
@@ -912,6 +912,7 @@ footer div div h4 {
 }
 .formap .formulario .inmens {
   grid-area: inmens;
+  height: 180px;
   transform: scale(0.9);
 }
 .formap .formulario .inmens:focus {
@@ -965,7 +966,7 @@ footer div div h4 {
 .formap .cajamapa {
   background-color: rgb(8, 209, 98);
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -978,18 +979,18 @@ footer div div h4 {
 @media screen and (min-width: 320px) and (max-width: 806px) {
   .formap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .formap .formulario {
     background-color: rgb(8, 209, 98);
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(17, auto);
-    grid-template-areas: ". consul ." ". . ." "nom nom ." "innom innom innom" "ape ape . " "inape inape inape" "pass pass ." "inpass inpass inpass" "mens mens ." "inmens inmens inmens" "gen gen ." ". ingenh hom" ". ingenm muj" ". ingenp pre" "susc insusc ." ". . ." ". . env";
+    grid-template-rows: repeat(19, auto);
+    grid-template-areas: ". . . consul . . ." ". . . . . . ." " . . nom nom . . ." ". . innom innom innom . ." ". . ape ape . . ." ". . inape inape inape . ." ". . pass pass . . ." ". . inpass inpass inpass . ." ". . mens mens . . ." ". . inmens inmens inmens . ." ". . inmens inmens inmens . ." ". . inmens inmens inmens . ." ". . gen gen . . ." ". . ingenh hom . . ." ". . ingenm muj . . ." ". . ingenp pre pre . ." ". . susc insusc . . ." ". . . . . . ." ". . . . env . .";
   }
   .formap .formulario .consul {
     grid-area: consul;
@@ -1072,7 +1073,7 @@ footer div div h4 {
   }
   .formap .formulario .ingenp {
     grid-area: ingenp;
-    transform: scale(0.22);
+    transform: scale(0.6);
   }
   .formap .formulario .pre {
     grid-area: pre;
@@ -1094,10 +1095,7 @@ footer div div h4 {
   .cajamapa {
     background-color: rgb(8, 209, 98);
     width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-items: center;
-    align-content: center;
+    height: 70vh !important;
   }
   .cajamapa .tammap {
     width: 80% !important;
