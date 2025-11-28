@@ -18,6 +18,18 @@
     align-items: star;
     gap: 1rem;
 
+    .fixed-whatsaap {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+        z-index: 1000;
+    }
 
     .quienessomos {
         margin: 2rem;
@@ -68,6 +80,69 @@
     }
 }
 
+@media screen and (min-width: 501px) and (max-width: 864px) {
+    .nosot {
+
+        width: 100%;
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+
+
+        .quienessomos {
+            width: 80vw;
+            grid-area: quienessomos;
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 1rem;
+            border-radius: 20px;
+
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+
+            h2 {
+                text-align: center;
+                color: #1e5a85;
+                font-size: 2rem;
+                margin-bottom: 2rem;
+
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+                text-align: justify;
+            }
+        }
+
+        .loc {
+            grid-area: loc;
+            align-content: start;
+            align-items: start;
+            width: 80vw;
+            height: 60vh;
+            border: 5px solid rgb(47, 0, 255);
+        }
+
+        .desde {
+            grid-area: desde;
+            display: flex;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+
+            font-size: 4rem;
+            color: #14119c;
+
+
+        }
+    }
+}
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
     .nosot {
         width: 100%;
@@ -85,12 +160,12 @@
             "desde"
             "loc"
             "loc";
-display: flex;
+        display: flex;
         align-items: star;
         justify-items: center;
         flex-direction: column;
-    gap: 1rem;
-    
+        gap: 1rem;
+
 
         .quienessomos {
             width: 80vw;
@@ -107,7 +182,7 @@ display: flex;
             h2 {
                 text-align: center;
                 color: #1e5a85;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin-bottom: 2rem;
 
             }
@@ -118,24 +193,26 @@ display: flex;
                 text-align: justify;
             }
         }
-.loc {
-    grid-area: loc;
-    align-content: start;
-    align-items: start;
-    width: 80vw;
-    height: 60vh;
-    border: 5px solid rgb(47, 0, 255);
-}
-.desde {
-    grid-area: desde;
-    display: flex;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    
-    font-size: 2rem;
-    color: #14119c;
-    
-    
-}
+
+        .loc {
+            grid-area: loc;
+            align-content: start;
+            align-items: start;
+            width: 80vw;
+            height: 60vh;
+            border: 5px solid rgb(47, 0, 255);
+        }
+
+        .desde {
+            grid-area: desde;
+            display: flex;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+
+            font-size: 2.5rem;
+            color: #14119c;
+
+
+        }
     }
 }

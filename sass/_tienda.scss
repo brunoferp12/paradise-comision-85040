@@ -2,8 +2,8 @@
 
 /*mixin que es para celular*/
 @mixin card-bookrp {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
 }
 
 .maintienda {
@@ -28,11 +28,25 @@
         ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
     ;
 
+    .fixed-whatsaap {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+        z-index: 1000;
+    }
+
     .tiend {
         grid-area: tiend;
     }
 
-    .repons1 {margin-top: 2rem;
+    .repons1 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons1;
         transition: transform .3s ease-in-out;
@@ -43,11 +57,13 @@
         transform: scale(1.1);
     }
 
-    .descrip1 {margin-top: 1rem;
+    .descrip1 {
+        margin-top: 1rem;
         grid-area: descrip1;
     }
 
-    .repons2 {margin-top: 2rem;
+    .repons2 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons2;
         transition: transform .3s ease-in-out;
@@ -57,11 +73,13 @@
         transform: scale(1.1);
     }
 
-    .descrip2 {margin-top: 1rem;
+    .descrip2 {
+        margin-top: 1rem;
         grid-area: descrip2;
     }
 
-    .repons3 {margin-top: 2rem;
+    .repons3 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons3;
         transition: transform .3s ease-in-out;
@@ -71,11 +89,13 @@
         transform: scale(1.1);
     }
 
-    .descrip3 {margin-top: 1rem;
+    .descrip3 {
+        margin-top: 1rem;
         grid-area: descrip3;
     }
 
-    .repons4 {margin-top: 2rem;
+    .repons4 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons4;
         transition: transform .3s ease-in-out;
@@ -85,11 +105,13 @@
         transform: scale(1.1);
     }
 
-    .descrip4 {margin-top: 1rem;
+    .descrip4 {
+        margin-top: 1rem;
         grid-area: descrip4;
     }
 
-    .repons5 {margin-top: 2rem;
+    .repons5 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons5;
         transition: transform .3s ease-in-out;
@@ -99,11 +121,13 @@
         transform: scale(1.1);
     }
 
-    .descrip5 {margin-top: 1rem;
+    .descrip5 {
+        margin-top: 1rem;
         grid-area: descrip5;
     }
 
-    .repons6 {margin-top: 2rem;
+    .repons6 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons6;
         transition: transform .3s ease-in-out;
@@ -113,11 +137,13 @@
         transform: scale(1.1);
     }
 
-    .descrip6 {margin-top: 1rem;
+    .descrip6 {
+        margin-top: 1rem;
         grid-area: descrip6;
     }
 
-    .repons7 {margin-top: 2rem;
+    .repons7 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons7;
         transition: transform .3s ease-in-out;
@@ -127,11 +153,13 @@
         transform: scale(1.1);
     }
 
-    .descrip7 {margin-top: 1rem;
+    .descrip7 {
+        margin-top: 1rem;
         grid-area: descrip7;
     }
 
-    .repons8 {margin-top: 2rem;
+    .repons8 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons8;
         transition: transform .3s ease-in-out;
@@ -141,11 +169,13 @@
         transform: scale(1.1);
     }
 
-    .descrip8 {margin-top: 1rem;
+    .descrip8 {
+        margin-top: 1rem;
         grid-area: descrip8;
     }
 
-    .repons9 {margin-top: 2rem;
+    .repons9 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons9;
         transition: transform .3s ease-in-out;
@@ -155,11 +185,13 @@
         transform: scale(1.1);
     }
 
-    .descrip9 {margin-top: 1rem;
+    .descrip9 {
+        margin-top: 1rem;
         grid-area: descrip9;
     }
 
-    .repons10 {margin-top: 2rem;
+    .repons10 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons10;
         transition: transform .3s ease-in-out;
@@ -169,11 +201,13 @@
         transform: scale(1.1);
     }
 
-    .descrip10 {margin-top: 1rem;
+    .descrip10 {
+        margin-top: 1rem;
         grid-area: descrip10;
     }
 
-    .repons11 {margin-top: 2rem;
+    .repons11 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons11;
         transition: transform .3s ease-in-out;
@@ -183,11 +217,13 @@
         transform: scale(1.1);
     }
 
-    .descrip11 {margin-top: 1rem;
+    .descrip11 {
+        margin-top: 1rem;
         grid-area: descrip11;
     }
 
-    .repons12 {margin-top: 2rem;
+    .repons12 {
+        margin-top: 2rem;
         @extend %card-book;
         grid-area: repons12;
         transition: transform .3s ease-in-out;
@@ -197,28 +233,29 @@
         transform: scale(1.1);
     }
 
-    .descrip12 {margin-top: 1rem;
+    .descrip12 {
+        margin-top: 1rem;
         grid-area: descrip12;
     }
 }
 
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
-    
+
 
     .maintienda {
 
         background-color: aqua;
         width: 100%;
-        gap: 2rem;
+        gap: 1rem;
         padding: 3rem;
         display: grid;
         grid-auto-rows: auto;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(38, auto);
         grid-template-areas:
-        "."
-        "."
+            "."
+            "."
             "tiend"
             "repons1"
             "descrip1"
@@ -264,10 +301,10 @@
         .repons1 {
             @include card-bookrp;
             grid-area: repons1;
-            
+
         }
 
-       
+
 
         .descrip1 {
             grid-area: descrip1;
@@ -277,10 +314,10 @@
         .repons2 {
             @include card-bookrp;
             grid-area: repons2;
-            
+
         }
 
-       
+
 
         .descrip2 {
             grid-area: descrip2;
@@ -289,10 +326,10 @@
         .repons3 {
             @include card-bookrp;
             grid-area: repons3;
-            
+
         }
 
-       
+
 
         .descrip3 {
             grid-area: descrip3;
@@ -301,10 +338,10 @@
         .repons4 {
             @include card-bookrp;
             grid-area: repons4;
-            
+
         }
 
-        
+
 
         .descrip4 {
             grid-area: descrip4;
@@ -313,10 +350,10 @@
         .repons5 {
             @include card-bookrp;
             grid-area: repons5;
-           
+
         }
 
-        
+
 
         .descrip5 {
             grid-area: descrip5;
@@ -325,10 +362,10 @@
         .repons6 {
             @include card-bookrp;
             grid-area: repons6;
-            
+
         }
 
-        
+
         .descrip6 {
             grid-area: descrip6;
         }
@@ -336,10 +373,10 @@
         .repons7 {
             @include card-bookrp;
             grid-area: repons7;
-           
+
         }
 
-       
+
 
         .descrip7 {
             grid-area: descrip7;
@@ -348,10 +385,10 @@
         .repons8 {
             @include card-bookrp;
             grid-area: repons8;
-            
+
         }
 
-      
+
         .descrip8 {
             grid-area: descrip8;
         }
@@ -359,10 +396,10 @@
         .repons9 {
             @include card-bookrp;
             grid-area: repons9;
-            
+
         }
 
-     
+
         .descrip9 {
             grid-area: descrip9;
         }
@@ -370,10 +407,10 @@
         .repons10 {
             @include card-bookrp;
             grid-area: repons10;
-            
+
         }
 
-      
+
 
         .descrip10 {
             grid-area: descrip10;
@@ -382,10 +419,10 @@
         .repons11 {
             @include card-bookrp;
             grid-area: repons11;
-            
+
         }
 
-       
+
         .descrip11 {
             grid-area: descrip11;
         }
@@ -393,10 +430,10 @@
         .repons12 {
             @include card-bookrp;
             grid-area: repons12;
-            
+
         }
 
-       
+
         .descrip12 {
             grid-area: descrip12;
         }

@@ -5,6 +5,19 @@
     display: flex;
     flex-wrap: nowrap;
 
+    .fixed-whatsaap {
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+
+        z-index: 1000;
+    }
+
     .formulario {
         background-color: rgb(8, 209, 98);
         width: 50vw;
@@ -163,7 +176,7 @@
         .env {
             grid-area: env;
             transform: scale(0.9);
-            display:flex;
+            display: flex;
             justify-self: center;
             align-self: center;
         }
@@ -177,9 +190,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
         .tammap {
             width: 50vw;
-            height: 50vh;}
+            height: 50vh;
+        }
     }
 }
 
@@ -346,7 +361,7 @@
             .env {
                 grid-area: env;
                 transform: scale(0.9);
-                
+
                 justify-self: center;
                 align-self: center;
             }

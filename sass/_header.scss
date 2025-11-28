@@ -1,48 +1,63 @@
-
 @use "variables" as v;
 
 
 header {
-    background-color: v.$background;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: aqua;
-    width: 100vw;
-    height: 15vh;
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "logo name enla enla enla enla enla enla enla but butcerr";
-    align-items: center;
-    justify-items: center;
+  background-color: v.$background;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: aqua;
+  width: 100vw;
+  height: 15vh;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "logo name enla enla enla enla enla enla enla but butcerr";
+  align-items: center;
+  justify-items: center;
 
-    .logo {
-        height: 12vh;
-        width: auto;
-        grid-area: logo;
+  .logo {
+    height: 12vh;
+    width: auto;
+    grid-area: logo;
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .but {
+    grid-area: but;
+    display: none;
+  }
+
+  .enla {
+    grid-area: enla;
+    margin-left: 25rem;
+
+    .butcerr {
+      grid-area: butcerr;
+      display: none
     }
-    .name{grid-area: name;}
-    .but{ grid-area: but;
-    display: none;}
-    .enla{grid-area: enla;
-      margin-left: 25rem;
-    .butcerr{grid-area: butcerr;
-    display: none}
-.stilnav{text-decoration: none;
-  margin-right: 1rem;
-  
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: solid rgb(54, 54, 63);
-    border-radius: 8px;
-    color: black;}}
-    
+
+    .stilnav {
+      text-decoration: none;
+      margin-right: 1rem;
+
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      border: solid rgb(54, 54, 63);
+      border-radius: 8px;
+      color: black;
+    }
+  }
+
 }
+
 @media (max-width: 1320px) {
   header {
-  
+
     .enla {
       display: none;
       flex-direction: column;
@@ -52,8 +67,8 @@ header {
       width: 200px;
       background: #5da6e2;
       padding: 1rem;
-      
-      
+
+
       z-index: 5000;
     }
 
@@ -61,7 +76,7 @@ header {
       display: block;
     }
 
-  
+
     &.open .enla {
       display: flex;
     }

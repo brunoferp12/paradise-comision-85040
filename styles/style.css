@@ -17,6 +17,16 @@
   grid-template-rows: repeat(9, auto);
   grid-template-areas: ". . . . . . tiend . . . . . ." ". repons1 repons1 repons1 . repons2 repons2 repons2 . repons3 repons3 repons3 ." ". descrip1 descrip1 descrip1 . descrip2 descrip2 descrip2 . descrip3 descrip3 descrip3 ." ". repons4 repons4 repons4 . repons5 repons5 repons5 . repons6 repons6 repons6 ." ". descrip4 descrip4 descrip4 . descrip5 descrip5 descrip5 . descrip6 descrip6 descrip6 ." ". repons7 repons7 repons7 . repons8 repons8 repons8 . repons9 repons9 repons9 ." ". descrip7 descrip7 descrip7 . descrip8 descrip8 descrip8 . descrip9 descrip9 descrip9 ." ". repons10 repons10 repons10 . repons11 repons11 repons11 . repons12 repons12 repons12 ." ". descrip10 descrip10 descrip10 . descrip11 descrip11 descrip11 . descrip12 descrip12 descrip12 .";
 }
+.maintienda .fixed-whatsaap img {
+  width: 60px;
+  height: 60px;
+}
+.maintienda .fixed-whatsaap {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 .maintienda .tiend {
   grid-area: tiend;
 }
@@ -169,7 +179,7 @@
   .maintienda {
     background-color: aqua;
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
@@ -182,96 +192,96 @@
     grid-area: tiend;
   }
   .maintienda .repons1 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons1;
   }
   .maintienda .descrip1 {
     grid-area: descrip1;
   }
   .maintienda .repons2 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons2;
   }
   .maintienda .descrip2 {
     grid-area: descrip2;
   }
   .maintienda .repons3 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons3;
   }
   .maintienda .descrip3 {
     grid-area: descrip3;
   }
   .maintienda .repons4 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons4;
   }
   .maintienda .descrip4 {
     grid-area: descrip4;
   }
   .maintienda .repons5 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons5;
   }
   .maintienda .descrip5 {
     grid-area: descrip5;
   }
   .maintienda .repons6 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons6;
   }
   .maintienda .descrip6 {
     grid-area: descrip6;
   }
   .maintienda .repons7 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons7;
   }
   .maintienda .descrip7 {
     grid-area: descrip7;
   }
   .maintienda .repons8 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons8;
   }
   .maintienda .descrip8 {
     grid-area: descrip8;
   }
   .maintienda .repons9 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons9;
   }
   .maintienda .descrip9 {
     grid-area: descrip9;
   }
   .maintienda .repons10 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons10;
   }
   .maintienda .descrip10 {
     grid-area: descrip10;
   }
   .maintienda .repons11 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons11;
   }
   .maintienda .descrip11 {
     grid-area: descrip11;
   }
   .maintienda .repons12 {
-    width: 60vw;
-    height: 50vh;
+    width: 160px;
+    height: 250px;
     grid-area: repons12;
   }
   .maintienda .descrip12 {
@@ -289,6 +299,16 @@
   grid-template-areas: "quienessomos desde" "quienessomos ." "quienessomos loc" "quienessomos loc";
   align-items: star;
   gap: 1rem;
+}
+.nosot .fixed-whatsaap img {
+  width: 60px;
+  height: 60px;
+}
+.nosot .fixed-whatsaap {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 .nosot .quienessomos {
   margin: 2rem;
@@ -330,6 +350,54 @@
   border: 5px solid rgb(47, 0, 255);
 }
 
+@media screen and (min-width: 501px) and (max-width: 864px) {
+  .nosot {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  .nosot .quienessomos {
+    width: 80vw;
+    grid-area: quienessomos;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+  }
+  .nosot .quienessomos h2 {
+    text-align: center;
+    color: #1e5a85;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .nosot .quienessomos p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  .nosot .loc {
+    grid-area: loc;
+    align-content: start;
+    align-items: start;
+    width: 80vw;
+    height: 60vh;
+    border: 5px solid rgb(47, 0, 255);
+  }
+  .nosot .desde {
+    grid-area: desde;
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-size: 4rem;
+    color: #14119c;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 500px) {
   .nosot {
     width: 100%;
@@ -357,7 +425,7 @@
   .nosot .quienessomos h2 {
     text-align: center;
     color: #1e5a85;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
   }
   .nosot .quienessomos p {
@@ -378,7 +446,7 @@
     display: flex;
     justify-content: center;
     font-family: "Playfair Display", serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #14119c;
   }
 }
@@ -393,6 +461,16 @@
   flex-direction: column;
   gap: 1rem;
   margin-top: 1rem;
+}
+.promocion .fixed-whatsaap img {
+  width: 60px;
+  height: 60px;
+}
+.promocion .fixed-whatsaap {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 .promocion .promo {
   margin-top: 50px;
@@ -673,7 +751,7 @@ header .enla .stilnav {
 }
 .contcarru {
   width: 100%;
-  height: 130vh !important;
+  height: 110vh;
   background-color: aqua;
   display: flex;
   flex-direction: column;
@@ -682,13 +760,23 @@ header .enla .stilnav {
   gap: 2rem;
   padding-block: 3rem;
 }
+.contcarru .fixed-whatsaap img {
+  width: 60px;
+  height: 60px;
+}
+.contcarru .fixed-whatsaap {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
 .contcarru h5 {
   font-size: 2rem;
   margin: 0;
 }
 .contcarru .carousel {
-  width: 15vw;
-  height: 10vh;
+  width: 190px;
+  height: 250px;
 }
 .contcarru .carousel .produc {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -697,18 +785,38 @@ header .enla .stilnav {
   margin-top: 10px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 430px) {
+@media screen and (min-width: 501px) and (max-width: 864px) {
   .contcarru {
     width: 100%;
-    height: 40vh;
+    height: 110vh;
     background-color: aquamarine;
     display: flex;
     align-content: center;
     justify-items: center;
   }
   .contcarru .carousel {
-    width: 50vw;
-    height: 30vh;
+    width: 190px;
+    height: 250px;
+  }
+  .contcarru .carousel .produc {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .contcarru {
+    width: 100%;
+    height: 110vh;
+    background-color: aquamarine;
+    display: flex;
+    align-content: center;
+    justify-items: center;
+  }
+  .contcarru .carousel {
+    width: 190px;
+    height: 250px;
   }
   .contcarru .carousel .produc {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -729,6 +837,16 @@ footer div div h4 {
   padding-top: 15vh;
   display: flex;
   flex-wrap: nowrap;
+}
+.formap .fixed-whatsaap img {
+  width: 60px;
+  height: 60px;
+}
+.formap .fixed-whatsaap {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
 }
 .formap .formulario {
   background-color: rgb(8, 209, 98);
