@@ -179,7 +179,9 @@
   .maintienda {
     background-color: aqua;
     width: 100%;
+    height: auto;
     gap: 1rem;
+    margin-top: 2rem;
     padding: 3rem;
     display: grid;
     grid-auto-rows: auto;
